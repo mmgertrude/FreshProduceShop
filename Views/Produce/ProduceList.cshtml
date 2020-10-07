@@ -1,0 +1,8 @@
+
+@model ProduceListViewModel
+
+    <h1>@Model.CurrentCategory</h1>
+    @foreach (var produce in Model.Produces)
+    {
+        <partial name ="_ProduceCard" model="produce"/>        
+    }
